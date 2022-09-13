@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
     <title>Admin Dashboard</title>
 </head>
 <body>
     <!-- nav content -->
-    <div class="nav">
+    <div class="nav padding16">
         <div class="nav__logoContainer">
             <div class="nav__logoContainer-logo">
-                1
+               <img src="./Assets/land-plots.svg" alt="">
             </div>
             <div class="nav__logoContainer-text">
                 Dashboard
@@ -21,37 +23,37 @@
             <div class="nav__containerTop-child">
                 <div class="logo"></div>
                 <div class="text">
-                    <a href="">Home</a>
+                    <a href="#">Home</a>
                 </div>
             </div>
             <div class="nav__containerTop-child">
                 <div class="logo"></div>
                 <div class="text">
-                    <a href="">Profile</a>
+                    <a href="https://github.com/djbdeguzman">Profile</a>
                 </div>
             </div>
             <div class="nav__containerTop-child">
                 <div class="logo"></div>
                 <div class="text">
-                    <a href="">Messages</a>
+                    <a href="#">Messages</a>
                 </div>
             </div>
             <div class="nav__containerTop-child">
                 <div class="logo"></div>
                 <div class="text">
-                    <a href="">History</a>
+                    <a href="#">History</a>
                 </div>
             </div>
             <div class="nav__containerTop-child">
                 <div class="logo"></div>
                 <div class="text">
-                    <a href="">Tasks</a>
+                    <a href="#">Tasks</a>
                 </div>
             </div>
             <div class="nav__containerTop-child">
                 <div class="logo"></div>
                 <div class="text">
-                    <a href="">Community</a>
+                    <a href="#">Community</a>
                 </div>
             </div>
         </div>
@@ -59,69 +61,127 @@
             <div class="nav__containerBottom-child">
                 <div class="logo"></div>
                 <div class="text">
-                    <a href="">Settings</a>
+                    <a href="#toggle">Settings</a>
                 </div>
             </div>
             <div class="nav__containerBottom-child">
                 <div class="logo"></div>
                 <div class="text">
-                    <a href="">Support</a>
+                    <a href="#contact">Support</a>
                 </div>
             </div>
             <div class="nav__containerBottom-child">
                 <div class="logo"></div>
                 <div class="text">
-                    <a href="">Privacy</a>
+                    <a href="https://github.com/djbdeguzman/Admin-Dashboard/blob/main/README.md">Read Me</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- header -->
-    <div class="header">
-        <div class="header__search">
-            <div class="header__search-button">s</div>
-            <div class="header__search-input">
-                <input type="text">
+    <div class="header padding16">
+        <div class="header__top">
+            <div class="header__search">
+                <div class="header__search-button"><img src="./Assets/magnify.svg" alt=""></div>
+                <input class="header__search-inputText" type="text">
+            </div>
+            <div class="header__profile justifyEnd">
+                <div class="settings__toggle" id="toggle"><button>toggle</button></div>
+                <div class="header__profile-text"><a class="name" href="https://github.com/djbdeguzman">Jette de Guzman</a></div>
+                <div class="header__profile-image header__search-dp"></div>
+                
             </div>
         </div>
-        <div class="header__profile">
-            <div class="settings__toggle"></div>
-            <div class="header__profile-image">img</div>
-            <div class="header__profile-text">Jette</div>
+        <div class="header__bot">
+            <div class="header__bot-left">
+                <div class="header__search-dp"></div>
+                <div class="header__search-name">
+                    <h3>Hi there!</h3>
+                </div>
+            </div>
+            <div class="header__bot-right justifyEnd">
+                <div class="header__bot-right-new">New</div>
+                <div class="header__bot-right-upload">Upload</div>
+                <div class="header__bot-right-share">Share</div>
+            </div>
         </div>
+        
     </div>
     <!-- Content -->
-    <div class="content">
-        <div class="content__header">
-            <h2 class="content__header-text">Your Projects
-            </h2>
+    <div class="content padding16">
+        <div class="content__left">
+            <div class="content__article">
+                <h2 class="content__article-text">Your Projects
+                </h2>
+            </div>
+            <div class="content__article-cardContainer">
+                <div class="content__article-cards borderRadius-5">
+                    <h4>Super Cool Project</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus corporis iusto voluptas rerum iste nesciunt molestiae. Quam voluptatem harum illum!</p>
+                </div>
+                <div class="content__article-cards borderRadius-5">
+                    <h4>Less Cool Project</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut, vel nulla blanditiis perspiciatis doloribus dolorem qui quod eaque officia.</p>
+                </div>
+                <div class="content__article-cards borderRadius-5">
+                    <h4>Impossible App</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores similique corrupti ipsum amet quidem sequi voluptatem ducimus quae molestiae. Magnam ipsum hic veniam quo, nihil ab qui necessitatibus error dolore incidunt odio libero itaque reiciendis eveniet architecto iure quos laudantium?</p>
+                </div>
+                <div class="content__article-cards borderRadius-5">
+                    <h4>Easy Peasy App</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi culpa, itaque eum possimus enim similique nisi esse magni saepe ipsa?</p>
+                </div>
+                <div class="content__article-cards borderRadius-5">
+                    <h4>Ad Blocker</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi culpa, itaque eum possimus enim similique nisi esse magni saepe ipsa?</p>
+                </div>
+                <div class="content__article-cards borderRadius-5">
+                    <h4>Money</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi culpa, itaque eum possimus enim similique nisi esse magni saepe ipsa?</p>
+                </div>
+            </div>
         </div>
-        <div class="content__header-cards">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, rerum!</div>
-        <div class="content__header-cards">Eius minima sunt qui? Eos magnam voluptas facere perspiciatis culpa.</div>
-        <div class="content__header-cards">A molestias possimus nemo et est accusantium totam dolor tenetur.</div>
-        <div class="content__header-cards">A error quo earum doloremque debitis eos quae fugit animi!</div>
-        <div class="content__header-cards">Nihil ratione delectus libero, suscipit accusantium distinctio minima magni doloremque!</div>
-        <div class="content__header-cards">Repellat corporis ullam cum natus unde facilis quo ab laudantium.</div>
-    </div>
-    <div class="announcement">
-        <div class="announcement__header">
-            <h2>Announcements</h2>
-            <div class="announcement__header-card">
-                <div class="announcement__header-cardcontent">a1</div>
-                <div class="announcement__header-cardcontent">a2</div>
-                <div class="announcement__header-cardcontent">a3</div>
+
+        <div class="content__right">
+            <div class="announcement">
+                <div class="announcement__header">
+                    <h2>Announcements</h2>
+                    <div class="announcement__header-card borderRadius-5">
+                        <div class="announcement__header-cardcontent">
+                            <h4>Site Maintenance</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi culpa, itaque eum possimus enim similique nisi esse magni saepe ipsa?</p>
+                            <br><hr>
+                        </div>
+                        <div class="announcement__header-cardcontent">
+                            <h4>Community Share Day</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi culpa, itaque eum possimus enim similique nisi esse magni saepe ipsa?</p>
+                                <br><hr>
+                        </div>
+                        <div class="announcement__header-cardcontent">
+                            <h4>Updated Privacy Policy</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi culpa, itaque eum possimus enim similique nisi esse magni saepe ipsa?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trending">
+                <div class="trending__header">
+                    <h2>Trending</h2>
+                    <div class="trending__header-card borderRadius-5">
+                        <div class="trending__header-cardcontent">t1</div>
+                        <div class="trending__header-cardcontent">t2</div>
+                        <div class="trending__header-cardcontent">t3</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="trending">
-        <div class="trending__header">
-            <h2>Trending</h2>
-            <div class="trending__header-card">
-                <div class="trending__header-cardcontent">t1</div>
-                <div class="trending__header-cardcontent">t2</div>
-                <div class="trending__header-cardcontent">t3</div>
-            </div>
-        </div>
-    </div>
+    <footer id="contact">
+        <ul>
+            <li>GitHub</li>
+            <li>Linked In</li>
+            <li>Email</li>
+        </ul>
+    </footer>
 </body>
 </html>
